@@ -40,7 +40,7 @@ class ControllerNode(Node):
         self.profiler = VelocityProfiler(default_speed=self.target_speed, max_speed=7.5)
         self.lateral_pid = LateralPIDController(kp=0.8, ki=0.02, kd=0.15, k_yaw=0.5, dt=0.1)
         self.pure_pursuit = PurePursuitController(
-            wheelbase=self.wheelbase, kv=0.25, l_min=0.8, l_max=2.5
+            wheelbase=self.wheelbase, kv=0.25, l_min=2, l_max=3
         )
         self.mpc = KinematicBicycleMPC(wheelbase=self.wheelbase, dt=0.1, horizon=10)
 
@@ -241,7 +241,7 @@ class ControllerNode(Node):
         for k in range(horizon):
             dist_ahead = (k + 1) * speed * dt
             px, py, pyaw = self.get_waypoint_at_distance(nearest_idx, dist_ahead)
-            ref.append([px, py, pyaw, self.target_speed])
+            ref.append([px, py, pyaw, 7.0])
         return ref
 
 

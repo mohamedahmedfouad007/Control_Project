@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="13" time="0.408" timestamp="2026-10-08T19:32:35.199063" hostname="mizo"><testcase classname="bicycle_control.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="bicycle_control.test.test_flake8" name="test_flake8" time="0.137"><failure message="AssertionError: Found 47 code style errors / warnings:&#10;  ./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','&#10;  ./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','&#10;  ./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 &gt; 99 characters)&#10;  ./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','&#10;  ./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','&#10;  ./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','&#10;  ./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','&#10;  ./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','&#10;  ./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:58:1: W293 blank line contains whitespace&#10;  ./bicycle_control/mpc.py:59:23: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:60:17: E701 multiple statements on one line (colon)&#10;  ./bicycle_control/mpc.py:63:47: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:64:37: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:93:69: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:95:100: E501 line too long (250 &gt; 99 characters)&#10;  ./bicycle_control/mpc.py:102:9: E303 too many blank lines (2)&#10;  ./bicycle_control/mpc.py:104:9: E306 expected 1 blank line before a nested definition, found 0&#10;  ./bicycle_control/mpc.py:106:28: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:107:28: E203 whitespace before ','&#10;  ./bicycle_control/mpc.py:121:17: E128 continuation line under-indented for visual indent&#10;  ./bicycle_control/mpc.py:122:17: E128 continuation line under-indented for visual indent&#10;  ./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 &gt; 99 characters)&#10;  ./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace&#10;  ./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator&#10;  ./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','&#10;  ./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 &gt; 99 characters)&#10;  ./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals&#10;  ./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals&#10;  ./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals&#10;  ./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals&#10;  ./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1&#10;  ./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)&#10;  ./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','&#10;  ./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','&#10;  ./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace&#10;  ./bicycle_control/pure_pursuit.py:44:69: E203 whitespace before ','&#10;  ./bicycle_control/pure_pursuit.py:44:100: E501 line too long (112 &gt; 99 characters)&#10;  ./bicycle_control/pure_pursuit.py:44:107: E203 whitespace before ','&#10;  ./bicycle_control/pure_pursuit.py:47:1: W293 blank line contains whitespace&#10;  ./bicycle_control/pure_pursuit.py:49:5: E303 too many blank lines (2)&#10;  ./bicycle_control/pure_pursuit.py:58:42: E203 whitespace before ','&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 47 code style errors / warnings:
+E     ./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','
+E     ./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','
+E     ./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 &gt; 99 characters)
+E     ./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','
+E     ./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','
+E     ./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','
+E     ./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','
+E     ./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','
+E     ./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:58:1: W293 blank line contains whitespace
+E     ./bicycle_control/mpc.py:59:23: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:60:17: E701 multiple statements on one line (colon)
+E     ./bicycle_control/mpc.py:63:47: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:64:37: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:93:69: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:95:100: E501 line too long (250 &gt; 99 characters)
+E     ./bicycle_control/mpc.py:102:9: E303 too many blank lines (2)
+E     ./bicycle_control/mpc.py:104:9: E306 expected 1 blank line before a nested definition, found 0
+E     ./bicycle_control/mpc.py:106:28: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:107:28: E203 whitespace before ','
+E     ./bicycle_control/mpc.py:121:17: E128 continuation line under-indented for visual indent
+E     ./bicycle_control/mpc.py:122:17: E128 continuation line under-indented for visual indent
+E     ./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 &gt; 99 characters)
+E     ./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace
+E     ./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator
+E     ./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','
+E     ./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 &gt; 99 characters)
+E     ./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals
+E     ./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals
+E     ./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals
+E     ./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals
+E     ./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1
+E     ./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)
+E     ./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','
+E     ./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','
+E     ./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace
+E     ./bicycle_control/pure_pursuit.py:44:69: E203 whitespace before ','
+E     ./bicycle_control/pure_pursuit.py:44:100: E501 line too long (112 &gt; 99 characters)
+E     ./bicycle_control/pure_pursuit.py:44:107: E203 whitespace before ','
+E     ./bicycle_control/pure_pursuit.py:47:1: W293 blank line contains whitespace
+E     ./bicycle_control/pure_pursuit.py:49:5: E303 too many blank lines (2)
+E     ./bicycle_control/pure_pursuit.py:58:42: E203 whitespace before ','
+E   assert 1 == 0</failure></testcase><testcase classname="bicycle_control.test.test_lateral_pid" name="test_lateral_pid_steer_right" time="0.000" /><testcase classname="bicycle_control.test.test_lateral_pid" name="test_lateral_pid_steer_left" time="0.000" /><testcase classname="bicycle_control.test.test_longitudinal_pid" name="test_longitudinal_pid_positive_error" time="0.000" /><testcase classname="bicycle_control.test.test_longitudinal_pid" name="test_longitudinal_pid_negative_error" time="0.000" /><testcase classname="bicycle_control.test.test_longitudinal_pid" name="test_longitudinal_pid_anti_windup" time="0.002" /><testcase classname="bicycle_control.test.test_mpc" name="test_mpc_straight_tracking" time="0.001" /><testcase classname="bicycle_control.test.test_pep257" name="test_pep257" time="0.061" /><testcase classname="bicycle_control.test.test_pure_pursuit" name="test_pure_pursuit_straight" time="0.000" /><testcase classname="bicycle_control.test.test_pure_pursuit" name="test_pure_pursuit_turn_left" time="0.000" /><testcase classname="bicycle_control.test.test_velocity_profiler" name="test_velocity_profiler_straight" time="0.000" /><testcase classname="bicycle_control.test.test_velocity_profiler" name="test_velocity_profiler_sharp_turn" time="0.000" /></testsuite></testsuites>

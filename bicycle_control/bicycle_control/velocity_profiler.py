@@ -4,7 +4,7 @@ Calculates maximum safe cornering speeds subject to lateral acceleration limits.
 """
 
 import math  # noqa: F401
-
+import numpy as np
 
 class VelocityProfiler:
     """Generates target speed profiles based on track curvature or precomputed data."""
@@ -20,4 +20,15 @@ class VelocityProfiler:
         # This controls how fast the car drives based on the road shape.
         # It slows the car down in sharp turns to prevent slipping.
         # Implement the formula to calculate safe speed from curvature, and clamp it.
+        if kappa == 0:
+            return self.max_speed
+        elif kappa is None:
+            if fallback_speed is None:
+                target_speed = self.default_speed
+            else: target_speed = fallback_speed
+        else:
+            v_curve = math.sqrt(self.max_lat_accel / abs(kappa))
+            target_speed = float(np.clip(v_curve , 0 , self.max_speed))
+        return target_speed
+        
         pass

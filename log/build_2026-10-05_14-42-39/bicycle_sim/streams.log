@@ -1,0 +1,31 @@
+[0.507s] Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:${AMENT_PREFIX_PATH} PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/build --no-deps symlink_data
+[0.649s] running develop
+[0.722s] running egg_info
+[0.722s] creating bicycle_sim.egg-info
+[0.722s] writing bicycle_sim.egg-info/PKG-INFO
+[0.723s] writing dependency_links to bicycle_sim.egg-info/dependency_links.txt
+[0.723s] writing entry points to bicycle_sim.egg-info/entry_points.txt
+[0.723s] writing requirements to bicycle_sim.egg-info/requires.txt
+[0.723s] writing top-level names to bicycle_sim.egg-info/top_level.txt
+[0.723s] writing manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[0.723s] reading manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[0.724s] writing manifest file 'bicycle_sim.egg-info/SOURCES.txt'
+[0.725s] running build_ext
+[0.725s] Creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages/bicycle-sim.egg-link (link to .)
+[0.725s] Installing kinematic_bicycle script to /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/bicycle_sim
+[0.725s] Installing sim_node script to /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/bicycle_sim
+[0.725s] 
+[0.725s] Installed /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim
+[0.725s] running symlink_data
+[0.726s] creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/ament_index
+[0.726s] creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/ament_index/resource_index
+[0.726s] creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/ament_index/resource_index/packages
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/resource/bicycle_sim -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/ament_index/resource_index/packages
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/package.xml -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/launch/bicycle_sim.launch.py -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/launch/kinematic_bicycle.launch.py -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/launch/bicycle.rviz -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim
+[0.726s] creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/urdf
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/urdf/racecar.xacro -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/urdf
+[0.726s] symbolically linking /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/urdf/racecar.urdf -> /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/urdf
+[0.742s] Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim' returned '0': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:${AMENT_PREFIX_PATH} PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/build --no-deps symlink_data

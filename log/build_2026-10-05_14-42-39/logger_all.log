@@ -1,0 +1,245 @@
+[0.125s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.125s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b3c3302bbb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b3c331687f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b3c331687f0>>)
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.263s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mizo/Engineering/ARL/Control_Task/Control_Project'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_control) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'bicycle_control' with type 'ros.ament_python' and name 'bicycle_control'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(bicycle_sim) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'bicycle_sim' with type 'ros.ament_python' and name 'bicycle_sim'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(track_environment) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'track_environment' with type 'ros.ament_python' and name 'track_environment'
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mizo/ROS2_Challenge/install
+[0.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_target' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'bicycle_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.323s] DEBUG:colcon.colcon_core.verb:Building package 'bicycle_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control', 'merge_install': False, 'path': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control', 'symlink_install': True, 'test_result_base': None}
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_target' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_clean_first' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'cmake_force_configure' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'ament_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'track_environment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.323s] DEBUG:colcon.colcon_core.verb:Building package 'track_environment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment', 'merge_install': False, 'path': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/track_environment', 'symlink_install': True, 'test_result_base': None}
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_target' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'bicycle_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.324s] DEBUG:colcon.colcon_core.verb:Building package 'bicycle_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim', 'merge_install': False, 'path': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_sim', 'symlink_install': True, 'test_result_base': None}
+[0.324s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.325s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/track_environment' with build type 'ament_python'
+[0.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('track_environment', 'ament_prefix_path')
+[0.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/ament_prefix_path.ps1'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/ament_prefix_path.dsv'
+[0.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/ament_prefix_path.sh'
+[0.331s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.335s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control' with build type 'ament_python'
+[0.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_control', 'ament_prefix_path')
+[0.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/ament_prefix_path.ps1'
+[0.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/ament_prefix_path.dsv'
+[0.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/ament_prefix_path.sh'
+[0.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.489s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/track_environment'
+[0.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.627s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.852s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: egg_info, setopt, bdist, upload, test, upload_docs, build_scripts, alias, build_py, install_scripts, install_headers, build_ext, bdist_dumb, install_data, sdist, bdist_egg, build, install, easy_install, dist_info, check, register, bdist_rpm, rotate, saveopts, install_egg_info, symlink_data, install_lib, develop, build_clib, clean
+[0.853s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: egg_info, setopt, bdist, upload, test, upload_docs, build_scripts, alias, build_py, install_scripts, install_headers, build_ext, bdist_dumb, install_data, sdist, bdist_egg, build, install, easy_install, dist_info, check, register, bdist_rpm, rotate, saveopts, install_egg_info, symlink_data, install_lib, develop, build_clib, clean
+[1.018s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --always-unzip, --help, --always-copy, --multi-version, --no-user-cfg, --dry-run, --force-installation-into-system-dir, --site-dirs, --install-dir, --prefix, --verbose, --local-snapshots-ok, --uninstall, --script-dir, --install-layout, --index-url, --find-links, --upgrade, --allow-hosts, --zip-ok, --version, --exclude-scripts, --user, --build-directory, --no-deps, --record, --optimize, --no-find-links, --egg-path, --editable
+[1.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment': PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/build --no-deps symlink_data
+[1.027s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --always-unzip, --help, --always-copy, --multi-version, --no-user-cfg, --dry-run, --force-installation-into-system-dir, --site-dirs, --install-dir, --prefix, --verbose, --local-snapshots-ok, --uninstall, --script-dir, --install-layout, --index-url, --find-links, --upgrade, --allow-hosts, --zip-ok, --version, --exclude-scripts, --user, --build-directory, --no-deps, --record, --optimize, --no-find-links, --egg-path, --editable
+[1.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control': PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/build --no-deps symlink_data
+[1.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_control', 'pythonpath_develop')
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/share/bicycle_control/hook/pythonpath_develop.ps1'
+[1.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control' returned '0': PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/build --no-deps symlink_data
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/share/bicycle_control/hook/pythonpath_develop.dsv'
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/share/bicycle_control/hook/pythonpath_develop.sh'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control' for CMake module files
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control' for CMake config files
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/bin'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/pkgconfig/bicycle_control.pc'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages'
+[1.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_control', 'pythonpath')
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/pythonpath.ps1'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/pythonpath.dsv'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/hook/pythonpath.sh'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/bin'
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bicycle_control)
+[1.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/package.ps1'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/package.dsv'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/package.sh'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/package.bash'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/bicycle_control/package.zsh'
+[1.302s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/share/colcon-core/packages/bicycle_control)
+[1.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('track_environment', 'pythonpath_develop')
+[1.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/share/track_environment/hook/pythonpath_develop.ps1'
+[1.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/share/track_environment/hook/pythonpath_develop.dsv'
+[1.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/share/track_environment/hook/pythonpath_develop.sh'
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment' for CMake module files
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment' returned '0': PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment/build --no-deps symlink_data
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment' for CMake config files
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/bin'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/pkgconfig/track_environment.pc'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages'
+[1.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('track_environment', 'pythonpath')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/pythonpath.ps1'
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/pythonpath.dsv'
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/hook/pythonpath.sh'
+[1.305s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/bin'
+[1.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(track_environment)
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/package.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/package.dsv'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/package.sh'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/package.bash'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/track_environment/package.zsh'
+[1.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/share/colcon-core/packages/track_environment)
+[1.306s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_sim' with build type 'ament_python'
+[1.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_sim', 'ament_prefix_path')
+[1.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/ament_prefix_path.ps1'
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/ament_prefix_path.dsv'
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/ament_prefix_path.sh'
+[1.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.476s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_sim'
+[1.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.655s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: egg_info, setopt, bdist, upload, test, upload_docs, build_scripts, alias, build_py, install_scripts, install_headers, build_ext, bdist_dumb, install_data, sdist, bdist_egg, build, install, easy_install, dist_info, check, register, bdist_rpm, rotate, saveopts, install_egg_info, symlink_data, install_lib, develop, build_clib, clean
+[1.812s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --always-unzip, --help, --always-copy, --multi-version, --no-user-cfg, --dry-run, --force-installation-into-system-dir, --site-dirs, --install-dir, --prefix, --verbose, --local-snapshots-ok, --uninstall, --script-dir, --install-layout, --index-url, --find-links, --upgrade, --allow-hosts, --zip-ok, --version, --exclude-scripts, --user, --build-directory, --no-deps, --record, --optimize, --no-find-links, --egg-path, --editable
+[1.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:${AMENT_PREFIX_PATH} PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/build --no-deps symlink_data
+[2.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_sim', 'pythonpath_develop')
+[2.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim' returned '0': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:${AMENT_PREFIX_PATH} PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/build --no-deps symlink_data
+[2.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/share/bicycle_sim/hook/pythonpath_develop.ps1'
+[2.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/share/bicycle_sim/hook/pythonpath_develop.dsv'
+[2.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim/share/bicycle_sim/hook/pythonpath_develop.sh'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim' for CMake module files
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim' for CMake config files
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/bin'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/pkgconfig/bicycle_sim.pc'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages'
+[2.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('bicycle_sim', 'pythonpath')
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/pythonpath.ps1'
+[2.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/pythonpath.dsv'
+[2.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/hook/pythonpath.sh'
+[2.054s] Level 1:colcon.colcon_core.environment:checking '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/bin'
+[2.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bicycle_sim)
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/package.ps1'
+[2.055s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/package.dsv'
+[2.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/package.sh'
+[2.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/package.bash'
+[2.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/bicycle_sim/package.zsh'
+[2.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/share/colcon-core/packages/bicycle_sim)
+[2.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.057s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.065s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.080s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.080s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/local_setup.ps1'
+[2.081s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/_local_setup_util_ps1.py'
+[2.083s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/setup.ps1'
+[2.085s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/local_setup.sh'
+[2.085s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/_local_setup_util_sh.py'
+[2.085s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/setup.sh'
+[2.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/local_setup.bash'
+[2.086s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/setup.bash'
+[2.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/local_setup.zsh'
+[2.087s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/setup.zsh'

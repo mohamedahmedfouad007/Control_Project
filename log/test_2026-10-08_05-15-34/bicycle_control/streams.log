@@ -1,0 +1,258 @@
+[0.220s] Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:/home/mizo/ROS2_Challenge/install/my_py_pkg:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml --junit-prefix=bicycle_control -o cache_dir=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:/home/mizo/ROS2_Challenge/build/my_py_pkg:/home/mizo/ROS2_Challenge/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[0.492s] [1m============================= test session starts ==============================[0m
+[0.492s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.495s] cachedir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache
+[0.495s] rootdir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control
+[0.495s] plugins: ament-lint-0.12.15, ament-copyright-0.12.15, launch-testing-1.0.15, launch-testing-ros-0.19.14, ament-flake8-0.12.15, ament-xmllint-0.12.15, ament-pep257-0.12.15, colcon-core-0.21.3, cov-3.0.0
+[0.684s] [1mcollecting ... [0m[1m
+[0.684s] collected 13 items                                                             [0m
+[0.684s] 
+[0.689s] test/test_copyright.py [33ms[0m[32m                                                 [  7%][0m
+[0.863s] test/test_flake8.py [31mF[0m[31m                                                    [ 15%][0m
+[0.866s] test/test_lateral_pid.py [31mF[0m[31mF[0m[31m                                              [ 30%][0m
+[0.869s] test/test_longitudinal_pid.py [32m.[0m[32m.[0m[32m.[0m[31m                                        [ 53%][0m
+[0.871s] test/test_mpc.py [31mF[0m[31m                                                       [ 61%][0m
+[0.941s] test/test_pep257.py [32m.[0m[31m                                                    [ 69%][0m
+[0.943s] test/test_pure_pursuit.py [32m.[0m[32m.[0m[31m                                             [ 84%][0m
+[0.947s] test/test_velocity_profiler.py [32m.[0m[32m.[0m[31m                                        [100%][0m
+[0.948s] 
+[0.948s] =================================== FAILURES ===================================
+[0.948s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.948s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.989s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.989s] [1m[31mE   AssertionError: Found 34 code style errors / warnings:[0m
+[0.989s] [1m[31mE     ./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','[0m
+[0.989s] [1m[31mE     ./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','[0m
+[0.989s] [1m[31mE     ./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 > 99 characters)[0m
+[0.989s] [1m[31mE     ./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','[0m
+[0.989s] [1m[31mE     ./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 > 99 characters)[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 > 99 characters)[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals[0m
+[0.990s] [1m[31mE     ./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals[0m
+[0.990s] [1m[31mE     ./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1[0m
+[0.990s] [1m[31mE     ./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)[0m
+[0.990s] [1m[31mE     ./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:43:69: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:43:100: E501 line too long (112 > 99 characters)[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:43:107: E203 whitespace before ','[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:46:1: W293 blank line contains whitespace[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:48:5: E303 too many blank lines (2)[0m
+[0.990s] [1m[31mE     ./bicycle_control/pure_pursuit.py:57:42: E203 whitespace before ','[0m
+[0.991s] [1m[31mE   assert 1 == 0[0m
+[0.991s] ----------------------------- Captured stdout call -----------------------------
+[0.991s] 
+[0.991s] ./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','
+[0.991s]         self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))
+[0.991s]                                                            ^
+[0.991s] 
+[0.991s] ./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','
+[0.991s]         self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))
+[0.991s]                                                                                   ^
+[0.991s] 
+[0.991s] ./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 > 99 characters)
+[0.991s]         self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))
+[0.991s]                                                                                                    ^
+[0.991s] 
+[0.991s] ./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','
+[0.991s]         delta_rad = float(np.clip(delta_rad , -self.max_steer_rad , self.max_steer_rad))
+[0.991s]                                            ^
+[0.991s] 
+[0.991s] ./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','
+[0.991s]         delta_rad = float(np.clip(delta_rad , -self.max_steer_rad , self.max_steer_rad))
+[0.991s]                                                                  ^
+[0.991s] 
+[0.991s] ./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','
+[0.991s]         self.integral = float(np.clip(self.integral , -self.integral_limit , self.integral_limit))
+[0.991s]                                                    ^
+[0.991s] 
+[0.991s] ./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','
+[0.992s]         self.integral = float(np.clip(self.integral , -self.integral_limit , self.integral_limit))
+[0.992s]                                                                           ^
+[0.992s] 
+[0.992s] ./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','
+[0.992s]         throttle_command = float(np.clip(throttle_command , -self.max_brake , self.max_throttle))
+[0.992s]                                                          ^
+[0.992s] 
+[0.992s] ./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','
+[0.992s]         throttle_command = float(np.clip(throttle_command , -self.max_brake , self.max_throttle))
+[0.992s]                                                                            ^
+[0.992s] 
+[0.992s] ./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','
+[0.992s]         self.state_sub = self.create_subscription(Odometry, '/state' , self.odom_callback , 10)
+[0.992s]                                                                     ^
+[0.992s] 
+[0.992s] ./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','
+[0.992s]         self.state_sub = self.create_subscription(Odometry, '/state' , self.odom_callback , 10)
+[0.992s]                                                                                          ^
+[0.992s] 
+[0.992s] ./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 > 99 characters)
+[0.992s]         # This allows the car to automatically hold a steady speed instead of requiring manual throttle.
+[0.992s]                                                                                                    ^
+[0.992s] 
+[0.992s] ./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace
+[0.992s]     
+[0.992s] ^
+[0.992s] 
+[0.992s] ./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator
+[0.992s]         self.target_vel= msg.linear.x
+[0.992s]                        ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','
+[0.993s]         self.current_throttle = float(np.clip(raw_throttle , -1.0 , 1.0))
+[0.993s]                                                           ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','
+[0.993s]         self.current_throttle = float(np.clip(raw_throttle , -1.0 , 1.0))
+[0.993s]                                                                  ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','
+[0.993s]         self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))
+[0.993s]                                                          ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','
+[0.993s]         self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))
+[0.993s]                                                                                ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 > 99 characters)
+[0.993s]         self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))
+[0.993s]                                                                                                    ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals
+[0.993s]         self.throttle_pub.publish(Float32(data = self.current_throttle))
+[0.993s]                                               ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals
+[0.993s]         self.throttle_pub.publish(Float32(data = self.current_throttle))
+[0.993s]                                                 ^
+[0.993s] 
+[0.993s] ./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals
+[0.994s]         self.steer_pub.publish(Float32(data = self.current_steer))
+[0.994s]                                            ^
+[0.994s] 
+[0.994s] ./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals
+[0.994s]         self.steer_pub.publish(Float32(data = self.current_steer))
+[0.994s]                                              ^
+[0.994s] 
+[0.994s] ./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1
+[0.994s] class VelocityProfiler:
+[0.994s] ^
+[0.994s] 
+[0.994s] ./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)
+[0.994s]             else: target_speed = fallback_speed
+[0.994s]                 ^
+[0.994s] 
+[0.994s] ./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','
+[0.994s]             target_speed = float(np.clip(v_curve , 0 , self.max_speed))
+[0.994s]                                                 ^
+[0.994s] 
+[0.995s] ./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','
+[0.995s]             target_speed = float(np.clip(v_curve , 0 , self.max_speed))
+[0.995s]                                                     ^
+[0.995s] 
+[0.995s] ./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace
+[0.995s]         
+[0.995s] ^
+[0.995s] 
+[0.995s] ./bicycle_control/pure_pursuit.py:43:69: E203 whitespace before ','
+[0.995s]             waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))
+[0.995s]                                                                     ^
+[0.995s] 
+[0.995s] ./bicycle_control/pure_pursuit.py:43:100: E501 line too long (112 > 99 characters)
+[0.995s]             waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))
+[0.995s]                                                                                                    ^
+[0.995s] 
+[0.995s] ./bicycle_control/pure_pursuit.py:43:107: E203 whitespace before ','
+[0.996s]             waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))
+[0.996s]                                                                                                           ^
+[0.996s] 
+[0.996s] ./bicycle_control/pure_pursuit.py:46:1: W293 blank line contains whitespace
+[0.996s]             
+[0.996s] ^
+[0.996s] 
+[0.996s] ./bicycle_control/pure_pursuit.py:48:5: E303 too many blank lines (2)
+[0.996s]     def compute_steering(self, x, y, yaw, target_pt, lookahead):
+[0.996s]     ^
+[0.996s] 
+[0.996s] ./bicycle_control/pure_pursuit.py:57:42: E203 whitespace before ','
+[0.996s]         true_lookahead = math.hypot(x_loc , y_loc)
+[0.996s]                                          ^
+[0.996s] 
+[0.996s] 19    E203 whitespace before ','
+[0.996s] 1     E225 missing whitespace around operator
+[0.996s] 4     E251 unexpected spaces around keyword / parameter equals
+[0.996s] 1     E302 expected 2 blank lines, found 1
+[0.996s] 1     E303 too many blank lines (2)
+[0.996s] 4     E501 line too long (106 > 99 characters)
+[0.996s] 1     E701 multiple statements on one line (colon)
+[0.996s] 3     W293 blank line contains whitespace
+[0.996s] 
+[0.996s] 17 files checked
+[0.996s] 34 errors
+[0.996s] 
+[0.997s] 'E'-type errors: 31
+[0.997s] 'W'-type errors: 3
+[0.997s] 
+[0.997s] Checked files:
+[0.997s] 
+[0.997s] * ./setup.py
+[0.997s] * ./bicycle_control/lateral_pid.py
+[0.997s] * ./bicycle_control/controller_node.py
+[0.997s] * ./bicycle_control/longitudinal_pid.py
+[0.997s] * ./bicycle_control/mpc.py
+[0.997s] * ./bicycle_control/teleop_bridge.py
+[0.997s] * ./bicycle_control/velocity_profiler.py
+[0.997s] * ./bicycle_control/pure_pursuit.py
+[0.997s] * ./bicycle_control/__init__.py
+[0.997s] * ./test/test_flake8.py
+[0.997s] * ./test/test_copyright.py
+[0.997s] * ./test/test_pep257.py
+[0.997s] * ./test/test_longitudinal_pid.py
+[0.997s] * ./test/test_velocity_profiler.py
+[0.997s] * ./test/test_pure_pursuit.py
+[0.997s] * ./test/test_mpc.py
+[0.997s] * ./test/test_lateral_pid.py
+[0.997s] ----------------------------- Captured stderr call -----------------------------
+[0.997s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.997s] [31m[1m_________________________ test_lateral_pid_steer_right _________________________[0m
+[0.997s] [1m[31mtest/test_lateral_pid.py[0m:8: in test_lateral_pid_steer_right
+[0.997s]     [94massert[39;49;00m delta < [94m0.0[39;49;00m
+[0.997s] [1m[31mE   assert 0.5 < 0.0[0m
+[0.997s] [31m[1m_________________________ test_lateral_pid_steer_left __________________________[0m
+[0.997s] [1m[31mtest/test_lateral_pid.py[0m:15: in test_lateral_pid_steer_left
+[0.997s]     [94massert[39;49;00m delta > [94m0.0[39;49;00m
+[0.997s] [1m[31mE   assert -0.5 > 0.0[0m
+[0.997s] [31m[1m__________________________ test_mpc_straight_tracking __________________________[0m
+[0.997s] [1m[31mtest/test_mpc.py[0m:11: in test_mpc_straight_tracking
+[0.997s]     delta, throttle = mpc.solve(x0, ref_traj, current_steer=[94m0.0[39;49;00m)
+[0.998s] [1m[31mE   TypeError: cannot unpack non-iterable NoneType object[0m
+[0.998s] [33m=============================== warnings summary ===============================[0m
+[0.998s] test/test_flake8.py::test_flake8
+[0.998s] test/test_flake8.py::test_flake8
+[0.998s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[0.998s] 
+[0.998s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[0.998s] - generated xml file: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml -
+[0.998s] =========================== short test summary info ============================
+[0.998s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 34 code style...
+[0.998s] FAILED test/test_lateral_pid.py::test_lateral_pid_steer_right - assert 0.5 < 0.0
+[0.998s] FAILED test/test_lateral_pid.py::test_lateral_pid_steer_left - assert -0.5 > 0.0
+[0.998s] FAILED test/test_mpc.py::test_mpc_straight_tracking - TypeError: cannot unpac...
+[0.998s] [31m============== [31m[1m4 failed[0m, [32m8 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.50s[0m[31m ==============[0m
+[1.100s] Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control' returned '1': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:/home/mizo/ROS2_Challenge/install/my_py_pkg:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml --junit-prefix=bicycle_control -o cache_dir=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:/home/mizo/ROS2_Challenge/build/my_py_pkg:/home/mizo/ROS2_Challenge/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

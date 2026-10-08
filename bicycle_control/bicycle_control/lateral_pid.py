@@ -14,7 +14,7 @@ class LateralPIDController:
     and orientation error relative to the nearest path waypoint.
     """
 
-    def __init__(self, kp=0.8, ki=0.02, kd=0.15, k_yaw=0.5, dt=0.1,
+    def __init__(self, kp=0.8, ki=0.01, kd=0.3, k_yaw=0.3, dt=0.1,
                  max_steer_rad=math.radians(35.0), integral_limit=1.0):
         self.kp = kp
         self.ki = ki
@@ -42,7 +42,17 @@ class LateralPIDController:
         # is off the path (CTE) and how misaligned its heading is.
         # Implement PID on the CTE with anti-windup, add a heading correction term,
         # and clamp the output to the steering limits.
-        pass
+        p_term = -self.kp * cte
+        self.integral_cte += cte * self.dt
+        self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))
+        i_term = -self.ki * self.integral_cte
+        derivative = (cte - self.prev_cte) / self.dt
+        d_term = -self.kd * derivative
+        self.prev_cte = cte
+        yaw_term = -self.k_yaw * heading_err
+        delta_rad = p_term + i_term + d_term + yaw_term
+        delta_rad = float(np.clip(delta_rad , -self.max_steer_rad , self.max_steer_rad))
+        return delta_rad
 
     def reset(self):
         """Resets integrator and previous error state."""

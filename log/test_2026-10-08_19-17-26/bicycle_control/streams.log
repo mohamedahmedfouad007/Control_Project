@@ -1,0 +1,31 @@
+[0.156s] Invoking command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:/home/mizo/ROS2_Challenge/install/my_py_pkg:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml --junit-prefix=bicycle_control -o cache_dir=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache "-k mpc" PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:/home/mizo/ROS2_Challenge/build/my_py_pkg:/home/mizo/ROS2_Challenge/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[0.348s] [1m============================= test session starts ==============================[0m
+[0.349s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.351s] cachedir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache
+[0.351s] rootdir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control
+[0.351s] plugins: ament-lint-0.12.15, ament-copyright-0.12.15, launch-testing-1.0.15, launch-testing-ros-0.19.14, ament-flake8-0.12.15, ament-xmllint-0.12.15, ament-pep257-0.12.15, colcon-core-0.21.3, cov-3.0.0
+[0.486s] [1mcollecting ... [0m[1m
+[0.486s] collected 13 items / 12 deselected / 1 selected                                [0m
+[0.486s] 
+[0.524s] test/test_mpc.py [31mF[0m[31m                                                       [100%][0m
+[0.524s] 
+[0.524s] =================================== FAILURES ===================================
+[0.525s] [31m[1m__________________________ test_mpc_straight_tracking __________________________[0m
+[0.525s] [1m[31mtest/test_mpc.py[0m:11: in test_mpc_straight_tracking
+[0.547s]     delta, throttle = mpc.solve(x0, ref_traj, current_steer=[94m0.0[39;49;00m)
+[0.547s] [1m[31mbicycle_control/mpc.py[0m:120: in solve
+[0.547s]     result = minimize(objective, u_init, bounds=bounds,
+[0.547s] [1m[31m/usr/lib/python3/dist-packages/scipy/optimize/_minimize.py[0m:690: in minimize
+[0.548s]     res = _minimize_slsqp(fun, x0, args, jac, bounds,
+[0.548s] [1m[31m/usr/lib/python3/dist-packages/scipy/optimize/_slsqp_py.py[0m:251: in _minimize_slsqp
+[0.548s]     x = asfarray(x0).flatten()
+[0.548s] [1m[31m<__array_function__ internals>[0m:5: in asfarray
+[0.548s]     [04m[91m?[39;49;00m[04m[91m?[39;49;00m[04m[91m?[39;49;00m
+[0.548s] [1m[31m/usr/lib/python3/dist-packages/numpy/lib/type_check.py[0m:114: in asfarray
+[0.548s]     [94mreturn[39;49;00m asarray(a, dtype=dtype)
+[0.548s] [1m[31mE   TypeError: float() argument must be a string or a real number, not 'function'[0m
+[0.548s] - generated xml file: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml -
+[0.548s] =========================== short test summary info ============================
+[0.548s] FAILED test/test_mpc.py::test_mpc_straight_tracking - TypeError: float() argu...
+[0.548s] [31m======================= [31m[1m1 failed[0m, [33m12 deselected[0m[31m in 0.20s[0m[31m =======================[0m
+[0.616s] Invoked command in '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control' returned '1': AMENT_PREFIX_PATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:/home/mizo/ROS2_Challenge/install/my_py_pkg:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml --junit-prefix=bicycle_control -o cache_dir=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache "-k mpc" PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:/home/mizo/ROS2_Challenge/build/my_py_pkg:/home/mizo/ROS2_Challenge/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

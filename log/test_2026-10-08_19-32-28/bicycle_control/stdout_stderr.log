@@ -1,0 +1,12 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache
+rootdir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control
+plugins: ament-lint-0.12.15, ament-copyright-0.12.15, launch-testing-1.0.15, launch-testing-ros-0.19.14, ament-flake8-0.12.15, ament-xmllint-0.12.15, ament-pep257-0.12.15, colcon-core-0.21.3, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 13 items / 11 deselected / 2 selected                                [0m
+
+test/test_lateral_pid.py [32m.[0m[32m.[0m[32m                                              [100%][0m
+
+- generated xml file: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml -
+[32m======================= [32m[1m2 passed[0m, [33m11 deselected[0m[32m in 0.17s[0m[32m =======================[0m

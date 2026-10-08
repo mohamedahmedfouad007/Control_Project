@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing track_environment.egg-info/PKG-INFO
+writing dependency_links to track_environment.egg-info/dependency_links.txt
+writing entry points to track_environment.egg-info/entry_points.txt
+writing requirements to track_environment.egg-info/requires.txt
+writing top-level names to track_environment.egg-info/top_level.txt
+reading manifest file 'track_environment.egg-info/SOURCES.txt'
+writing manifest file 'track_environment.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages/track-environment.egg-link (link to .)
+Installing lap_analyzer script to /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/track_environment
+Installing path_gen script to /home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/track_environment
+
+Installed /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment
+running symlink_data

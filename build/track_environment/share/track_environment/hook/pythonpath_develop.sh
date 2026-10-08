@@ -1,0 +1,3 @@
+# generated from colcon_core/shell/template/hook_prepend_value.sh.em
+
+_colcon_prepend_unique_value PYTHONPATH "/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment"

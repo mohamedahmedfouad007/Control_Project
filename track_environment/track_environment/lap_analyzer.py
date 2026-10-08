@@ -53,6 +53,7 @@ class LapAnalyzer(Node):
         self.last_s = 0.0
         self.total_distance = 0.0
         self.last_xy = None
+        self.breadcrumbs = []
 
         # Lap Times
         self.current_lap_time = 0.0
@@ -124,7 +125,8 @@ class LapAnalyzer(Node):
         qw = msg.pose.pose.orientation.w
         yaw = 2.0 * math.atan2(qz, qw)
         v = msg.twist.twist.linear.x
-
+        self.breadcrumbs.append((x , y))
+        if len(self.breadcrumbs) > 500: self.breadcrumbs.pop(0)
         self.current_speed = v
         self.global_max_speed = max(self.global_max_speed, v)
 
@@ -151,7 +153,6 @@ class LapAnalyzer(Node):
         self.global_ctes.append(abs_cte)
 
         self.current_lap_time = now_sec - self.lap_start_time
-
         # Lap Crossing Detection (s wrapped around track_length while moving forward).
         # e.g., last_s near end (> 70% length) and current s near start (< 30% length).
         if self.track_length > 5.0 and v > 0.1:
@@ -244,15 +245,22 @@ class LapAnalyzer(Node):
         #      - rms_cte: Root-Mean-Square Cross-Track Error: sqrt(mean(cte^2)) (m)
         #      - mean_speed: Average speed across the lap (m/s)
         #      - max_speed: Peak instantaneous speed (m/s)
-        #
+        mean_cte = np.mean(self.lap_ctes)
+        max_cte = np.max(self.lap_ctes)
+        rms_cte = math.sqrt(np.mean(np.array(self.lap_ctes) ** 2))
+        mean_speed = np.mean(self.lap_speeds)
+        max_speed = np.max(self.lap_speeds)
         # 2. Console Summary:
         #    Log a clean, structured terminal banner reporting lap time, best lap,
         #    CTE metrics (Mean, RMS, Max), speed metrics, and total distance.
-        #
+        print(f"\n" , "="*60, "\nLAP COMPLETED" , "\n" , "="*60, "\nLAP TIME: " , self.last_lap_time, "\nBEST LAP TIME: " , self.best_lap_time, "\nTOTAL TIME: " , now_sec - self.start_sim_time ,"\n\nMEAN CTE: " , mean_cte, "\nMAX CTE: " , max_cte , "\nRMS CTE: " , rms_cte, "\nMEAN HEADING ERROR: ", np.mean(self.lap_heading_errors), "\nMAX HEADING ERROR: " , np.max(self.lap_heading_errors) , "\n\nMAX SPEED: " , max_speed , "\nSPEEDS MEAN: " , mean_speed)
         # 3. Buffer Reset:
         #    Clear per-lap history buffers (self.lap_ctes, self.lap_heading_errors,
         #    self.lap_speeds) so the next lap starts fresh.
         # ======================================================================
+        self.lap_ctes.clear()
+        self.lap_speeds.clear()
+        self.lap_heading_errors.clear()
         pass
 
     def publish_telemetry(self):
@@ -266,17 +274,36 @@ class LapAnalyzer(Node):
         #      - self.speed_pub -> self.current_speed
         #      - self.heading_err_pub -> math.degrees(self.current_heading_err)
         #      - self.lap_time_pub -> self.current_lap_time
-        #
+        self.cte_pub.publish(Float32(data=self.current_cte))
+        self.speed_pub.publish(Float32(data=self.current_speed))
+        self.heading_err_pub.publish(
+            Float32(data=math.degrees(self.current_heading_err))
+        )
+        self.lap_time_pub.publish(Float32(data=self.current_lap_time))
         # 2. JSON Telemetry Message:
         #    Assemble a telemetry dictionary (lap, current_lap_time, last_lap_time,
         #    best_lap_time, speed, current_cte, rms_cte, heading_err_deg) and publish
         #    it as a serialized JSON String to self.metrics_pub.
-        #
+        telemetry = {
+        "lap": self.lap_count,
+        "current_lap_time": self.current_lap_time,
+        "last_lap_time": self.last_lap_time,
+        "best_lap_time": self.best_lap_time,
+        "speed": self.current_speed,
+        "current_cte": self.current_cte,
+        "rms_cte": (
+            math.sqrt(np.mean(np.array(self.lap_ctes) ** 2))
+            if self.lap_ctes else 0.0
+        ),
+        "heading_err_deg": math.degrees(self.current_heading_err)
+        }
+        self.metrics_pub.publish(String(data=json.dumps(telemetry)))
         # 3. Visual Telemetry (RViz):
         #    Pass the telemetry dict to self.publish_rviz_markers(telemetry).
         # ======================================================================
         # Baseline start-gate visualization hook
-        self.publish_rviz_markers()
+
+        self.publish_rviz_markers(telemetry)
 
     def publish_rviz_markers(self, telemetry=None):
         """Renders start gate, error whisker, and on-screen HUD text in RViz."""
@@ -319,18 +346,77 @@ class LapAnalyzer(Node):
         #      on the path (self.proj_xy).
         #    - Style with dynamic color (e.g., green when small, red when drifting)
         #      so tracking deviation is immediately visible.
-        #
+        cte = abs(self.current_cte)
+        severity = float(np.clip((cte - 0.1) / (0.4), 0.0, 1.0))
+        if self.last_xy is not None and self.path_received:
+            cte_marker = Marker()
+            cte_marker.color.r = severity
+            cte_marker.color.g = 1.0 - severity
+            cte_marker.color.b = 0.0
+            cte_marker.color.a = 1.0
+            cte_marker.header.frame_id = "map"
+            cte_marker.header.stamp = self.get_clock().now().to_msg()
+            cte_marker.ns = "cte"
+            cte_marker.id = 0
+            cte_marker.type = Marker.LINE_STRIP
+            cte_marker.action = Marker.ADD
+            cte_marker.scale.x = 0.03
+            cte_marker.points = [
+            Point(x=self.last_xy[0], y=self.last_xy[1], z=0.1),
+            Point(x=self.proj_xy[0], y=self.proj_xy[1], z=0.1)
+            ]
+            ma.markers.append(cte_marker)
         # 2. 3D Telemetry HUD Scoreboard (Marker.TEXT_VIEW_FACING):
         #    - Position floating text above the track start or trailing the vehicle.
         #    - Display live lap number, lap time, speed, CTE, and best lap time.
-        #
-        # Creative / Bonus Ideas (Optional):
-        #  - Controller Lookahead Preview: Render a Marker.SPHERE at target waypoint.
-        #  - Vehicle Breadcrumbs / Trajectory History: Render a Marker.POINTS trail
-        #    color-coded by speed or CTE magnitude.
-        #  - Lateral Acceleration Gauge: Render a vertical bar showing cornering load.
-        # ======================================================================
-
+        if self.path_points:
+            hud = Marker()
+            hud.header.frame_id = "map"
+            hud.header.stamp = now
+            hud.ns = "telemetry_hud"
+            hud.id = 0
+            hud.type = Marker.TEXT_VIEW_FACING
+            hud.action = Marker.ADD
+            hud.pose.position.x = self.path_points[0][0]
+            hud.pose.position.y = self.path_points[0][1]
+            hud.pose.position.z = 2.0
+            hud.scale.z = 0.5
+            hud.color.r = 1.0
+            hud.color.g = 1.0
+            hud.color.b = 1.0
+            hud.color.a = 1.0
+            best_lap = (
+            f"{telemetry['best_lap_time']:.2f} s"
+            if telemetry['best_lap_time'] is not None
+            else "--"
+            )
+            hud.text = (
+            f"Lap: {telemetry['lap']}\n"
+            f"Lap Time: {telemetry['current_lap_time']:.2f} s\n"
+            f"Speed: {telemetry['speed']:.2f} m/s\n"
+            f"CTE: {telemetry['current_cte']:.3f} m\n"
+            f"Best Lap: {best_lap}"
+            )
+            ma.markers.append(hud)
+        breadcrumb_marker = Marker()
+        breadcrumb_marker.header.frame_id = "map"
+        breadcrumb_marker.header.stamp = now
+        breadcrumb_marker.ns = "breadcrumbs"
+        breadcrumb_marker.id = 0
+        breadcrumb_marker.type = Marker.POINTS
+        breadcrumb_marker.action = Marker.ADD
+        breadcrumb_marker.scale.x = 0.1
+        breadcrumb_marker.scale.y = 0.1
+        severity = float(np.clip(self.current_speed / 8.0, 0.0, 1.0))
+        breadcrumb_marker.color.r = severity
+        breadcrumb_marker.color.g = 1.0 - severity
+        breadcrumb_marker.color.b = 0.0
+        breadcrumb_marker.color.a = 1.0
+        for x, y in self.breadcrumbs:
+            breadcrumb_marker.points.append(
+                Point(x=x, y=y, z=0.05)
+            )
+        ma.markers.append(breadcrumb_marker)
         self.viz_pub.publish(ma)
 
 

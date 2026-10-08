@@ -1,0 +1,21 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache
+rootdir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control
+plugins: ament-lint-0.12.15, ament-copyright-0.12.15, launch-testing-1.0.15, launch-testing-ros-0.19.14, ament-flake8-0.12.15, ament-xmllint-0.12.15, ament-pep257-0.12.15, colcon-core-0.21.3, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 13 items / 12 deselected / 1 selected                                [0m
+
+test/test_mpc.py [31mF[0m[31m                                                       [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m__________________________ test_mpc_straight_tracking __________________________[0m
+[1m[31mtest/test_mpc.py[0m:11: in test_mpc_straight_tracking
+    delta, throttle = mpc.solve(x0, ref_traj, current_steer=[94m0.0[39;49;00m)
+[1m[31mbicycle_control/mpc.py[0m:59: in solve
+    N = [96mmin[39;49;00m([96mself[39;49;00m.N , ref_trajectory)
+[1m[31mE   TypeError: '<' not supported between instances of 'list' and 'int'[0m
+- generated xml file: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_mpc.py::test_mpc_straight_tracking - TypeError: '<' not supp...
+[31m======================= [31m[1m1 failed[0m, [33m12 deselected[0m[31m in 0.20s[0m[31m =======================[0m

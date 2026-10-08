@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (bicycle_control) JobQueued: {'identifier': 'bicycle_control', 'dependencies': OrderedDict([('bicycle_control', '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control')])}
+[0.000568] (bicycle_control) JobStarted: {'identifier': 'bicycle_control'}
+[0.099887] (-) TimerEvent: {}
+[0.200209] (-) TimerEvent: {}
+[0.209072] (bicycle_control) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'mizo'), ('LC_TIME', 'en_US.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/mizo/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/267/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mizo'), ('CHROME_DESKTOP', 'code_code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/mizo/Engineering/ARL/Control_Task/Control_Project'), ('TERM_PROGRAM_VERSION', '1.140.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/267/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/mizo/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/267/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/267/usr/share/code/code'), ('MANAGERPID', '68937'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '69121'), ('BUNDLED_DEBUGPY_PATH', '/home/mizo/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/mizo/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '70360'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install:/home/mizo/ROS2_Challenge/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mizo'), ('JOURNAL_STREAM', '8:712441'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mizo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mizo/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/mizo/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/mizo/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mizo/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/mizo:@/tmp/.ICE-unix/69092,unix/mizo:/tmp/.ICE-unix/69092'), ('GTK_EXE_PREFIX', '/snap/code/267/usr'), ('INVOCATION_ID', 'c4809026d7a548b087804e6c3bf75b08'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/267/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mizo/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-019cb22c24883632.txt'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/mizo/.config/Code/User/workspaceStorage/4336df1940458396563e182ae76ff67d/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GCUUW3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-46ad94a25f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mizo/snap/code/267/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment:/home/mizo/ROS2_Challenge/install/my_py_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mizo/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/mizo/miniconda3/bin/conda'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'da6c2ab646f2d8099bee3609bd0f8686'), ('CONDA_EXE', '/home/mizo/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/home/mizo/snap/code/267/.local/share:/home/mizo/snap/code/267:/snap/code/267/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_control/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_sim:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/bicycle_sim/lib/python3.10/site-packages:/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/track_environment:/home/mizo/Engineering/ARL/Control_Task/Control_Project/install/track_environment/lib/python3.10/site-packages:/home/mizo/ROS2_Challenge/build/my_py_pkg:/home/mizo/ROS2_Challenge/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('PYTHONDONTWRITEBYTECODE', '1'), ('PYTEST_ADDOPTS', '--tb=short --junit-xml=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml --junit-prefix=bicycle_control -o cache_dir=/home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache')]), 'shell': False}
+[0.300343] (-) TimerEvent: {}
+[0.400762] (-) TimerEvent: {}
+[0.430740] (bicycle_control) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.430944] (bicycle_control) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.433330] (bicycle_control) StdoutLine: {'line': b'cachedir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/.pytest_cache\n'}
+[0.433458] (bicycle_control) StdoutLine: {'line': b'rootdir: /home/mizo/Engineering/ARL/Control_Task/Control_Project/bicycle_control\n'}
+[0.433542] (bicycle_control) StdoutLine: {'line': b'plugins: ament-lint-0.12.15, ament-copyright-0.12.15, launch-testing-1.0.15, launch-testing-ros-0.19.14, ament-flake8-0.12.15, ament-xmllint-0.12.15, ament-pep257-0.12.15, colcon-core-0.21.3, cov-3.0.0\n'}
+[0.500855] (-) TimerEvent: {}
+[0.593934] (bicycle_control) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.594142] (bicycle_control) StdoutLine: {'line': b'collected 13 items                                                             \x1b[0m\n'}
+[0.594347] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.598514] (bicycle_control) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [  7%]\x1b[0m\n'}
+[0.600929] (-) TimerEvent: {}
+[0.701184] (-) TimerEvent: {}
+[0.752042] (bicycle_control) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 15%]\x1b[0m\n'}
+[0.754617] (bicycle_control) StdoutLine: {'line': b'test/test_lateral_pid.py \x1b[31mF\x1b[0m\x1b[31mF\x1b[0m\x1b[31m                                              [ 30%]\x1b[0m\n'}
+[0.757593] (bicycle_control) StdoutLine: {'line': b'test/test_longitudinal_pid.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                                        [ 53%]\x1b[0m\n'}
+[0.759180] (bicycle_control) StdoutLine: {'line': b'test/test_mpc.py \x1b[32m.\x1b[0m\x1b[31m                                                       [ 61%]\x1b[0m\n'}
+[0.801279] (-) TimerEvent: {}
+[0.822691] (bicycle_control) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [ 69%]\x1b[0m\n'}
+[0.824033] (bicycle_control) StdoutLine: {'line': b'test/test_pure_pursuit.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                                             [ 84%]\x1b[0m\n'}
+[0.825514] (bicycle_control) StdoutLine: {'line': b'test/test_velocity_profiler.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                                        [100%]\x1b[0m\n'}
+[0.825645] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.825730] (bicycle_control) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.825803] (bicycle_control) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.825874] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.853839] (bicycle_control) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[0.854061] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 47 code style errors / warnings:\x1b[0m\n'}
+[0.854165] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','\x1b[0m\n"}
+[0.854249] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','\x1b[0m\n"}
+[0.854333] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 > 99 characters)\x1b[0m\n'}
+[0.854416] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','\x1b[0m\n"}
+[0.854496] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','\x1b[0m\n"}
+[0.854585] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','\x1b[0m\n"}
+[0.854735] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','\x1b[0m\n"}
+[0.854797] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','\x1b[0m\n"}
+[0.854839] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','\x1b[0m\n"}
+[0.854877] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:58:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.854914] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:59:23: E203 whitespace before ','\x1b[0m\n"}
+[0.854950] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:60:17: E701 multiple statements on one line (colon)\x1b[0m\n'}
+[0.854987] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:63:47: E203 whitespace before ','\x1b[0m\n"}
+[0.855023] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:64:37: E203 whitespace before ','\x1b[0m\n"}
+[0.855058] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:93:69: E203 whitespace before ','\x1b[0m\n"}
+[0.855093] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:95:100: E501 line too long (250 > 99 characters)\x1b[0m\n'}
+[0.855128] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:102:9: E303 too many blank lines (2)\x1b[0m\n'}
+[0.855171] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:104:9: E306 expected 1 blank line before a nested definition, found 0\x1b[0m\n'}
+[0.855211] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:106:28: E203 whitespace before ','\x1b[0m\n"}
+[0.855248] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:107:28: E203 whitespace before ','\x1b[0m\n"}
+[0.855285] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:121:17: E128 continuation line under-indented for visual indent\x1b[0m\n'}
+[0.855321] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/mpc.py:122:17: E128 continuation line under-indented for visual indent\x1b[0m\n'}
+[0.855358] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','\x1b[0m\n"}
+[0.855394] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','\x1b[0m\n"}
+[0.855431] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 > 99 characters)\x1b[0m\n'}
+[0.855467] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.855512] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator\x1b[0m\n'}
+[0.855547] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','\x1b[0m\n"}
+[0.855581] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','\x1b[0m\n"}
+[0.855616] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','\x1b[0m\n"}
+[0.855663] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','\x1b[0m\n"}
+[0.855700] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 > 99 characters)\x1b[0m\n'}
+[0.855736] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[0.855772] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[0.855809] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[0.855848] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[0.855885] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.855923] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)\x1b[0m\n'}
+[0.855962] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','\x1b[0m\n"}
+[0.856001] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','\x1b[0m\n"}
+[0.856043] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.856086] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:44:69: E203 whitespace before ','\x1b[0m\n"}
+[0.856129] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:44:100: E501 line too long (112 > 99 characters)\x1b[0m\n'}
+[0.856170] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:44:107: E203 whitespace before ','\x1b[0m\n"}
+[0.856209] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:47:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.856252] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:49:5: E303 too many blank lines (2)\x1b[0m\n'}
+[0.856292] (bicycle_control) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./bicycle_control/pure_pursuit.py:58:42: E203 whitespace before ','\x1b[0m\n"}
+[0.856336] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.856383] (bicycle_control) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.856431] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.856479] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/lateral_pid.py:47:60: E203 whitespace before ','\n"}
+[0.856525] (bicycle_control) StdoutLine: {'line': b'        self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))\n'}
+[0.856567] (bicycle_control) StdoutLine: {'line': b'                                                           ^\n'}
+[0.856618] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.856671] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/lateral_pid.py:47:83: E203 whitespace before ','\n"}
+[0.856711] (bicycle_control) StdoutLine: {'line': b'        self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))\n'}
+[0.856752] (bicycle_control) StdoutLine: {'line': b'                                                                                  ^\n'}
+[0.856791] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.856828] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/lateral_pid.py:47:100: E501 line too long (106 > 99 characters)\n'}
+[0.856866] (bicycle_control) StdoutLine: {'line': b'        self.integral_cte = float(np.clip(self.integral_cte , -self.integral_limit , self.integral_limit))\n'}
+[0.856905] (bicycle_control) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.856944] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.856991] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/lateral_pid.py:54:44: E203 whitespace before ','\n"}
+[0.857035] (bicycle_control) StdoutLine: {'line': b'        delta_rad = float(np.clip(delta_rad , -self.max_steer_rad , self.max_steer_rad))\n'}
+[0.857078] (bicycle_control) StdoutLine: {'line': b'                                           ^\n'}
+[0.857117] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857153] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/lateral_pid.py:54:66: E203 whitespace before ','\n"}
+[0.857188] (bicycle_control) StdoutLine: {'line': b'        delta_rad = float(np.clip(delta_rad , -self.max_steer_rad , self.max_steer_rad))\n'}
+[0.857224] (bicycle_control) StdoutLine: {'line': b'                                                                 ^\n'}
+[0.857261] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857298] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/longitudinal_pid.py:39:52: E203 whitespace before ','\n"}
+[0.857332] (bicycle_control) StdoutLine: {'line': b'        self.integral = float(np.clip(self.integral , -self.integral_limit , self.integral_limit))\n'}
+[0.857368] (bicycle_control) StdoutLine: {'line': b'                                                   ^\n'}
+[0.857406] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857441] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/longitudinal_pid.py:39:75: E203 whitespace before ','\n"}
+[0.857476] (bicycle_control) StdoutLine: {'line': b'        self.integral = float(np.clip(self.integral , -self.integral_limit , self.integral_limit))\n'}
+[0.857513] (bicycle_control) StdoutLine: {'line': b'                                                                          ^\n'}
+[0.857549] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857588] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/longitudinal_pid.py:44:58: E203 whitespace before ','\n"}
+[0.857626] (bicycle_control) StdoutLine: {'line': b'        throttle_command = float(np.clip(throttle_command , -self.max_brake , self.max_throttle))\n'}
+[0.857682] (bicycle_control) StdoutLine: {'line': b'                                                         ^\n'}
+[0.857717] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857754] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/longitudinal_pid.py:44:76: E203 whitespace before ','\n"}
+[0.857788] (bicycle_control) StdoutLine: {'line': b'        throttle_command = float(np.clip(throttle_command , -self.max_brake , self.max_throttle))\n'}
+[0.857823] (bicycle_control) StdoutLine: {'line': b'                                                                           ^\n'}
+[0.857857] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.857891] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:58:1: W293 blank line contains whitespace\n'}
+[0.857925] (bicycle_control) StdoutLine: {'line': b'        \n'}
+[0.857960] (bicycle_control) StdoutLine: {'line': b'^\n'}
+[0.857992] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858026] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:59:23: E203 whitespace before ','\n"}
+[0.858058] (bicycle_control) StdoutLine: {'line': b'        N = min(self.N , len(ref_trajectory))\n'}
+[0.858093] (bicycle_control) StdoutLine: {'line': b'                      ^\n'}
+[0.858125] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858163] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:60:17: E701 multiple statements on one line (colon)\n'}
+[0.858199] (bicycle_control) StdoutLine: {'line': b'        if N < 2: return (0.0, 0.0)\n'}
+[0.858234] (bicycle_control) StdoutLine: {'line': b'                ^\n'}
+[0.858268] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858304] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:63:47: E203 whitespace before ','\n"}
+[0.858348] (bicycle_control) StdoutLine: {'line': b'            bounds.append((-self.max_steer_rad , self.max_steer_rad))\n'}
+[0.858384] (bicycle_control) StdoutLine: {'line': b'                                              ^\n'}
+[0.858421] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858459] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:64:37: E203 whitespace before ','\n"}
+[0.858498] (bicycle_control) StdoutLine: {'line': b'            bounds.append((-self.k_a , self.k_a))\n'}
+[0.858539] (bicycle_control) StdoutLine: {'line': b'                                    ^\n'}
+[0.858575] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858612] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:93:69: E203 whitespace before ','\n"}
+[0.858655] (bicycle_control) StdoutLine: {'line': b'                heading_err = math.atan2(math.sin(yaw_ref - yaw_new) , math.cos(yaw_ref - yaw_new))\n'}
+[0.858693] (bicycle_control) StdoutLine: {'line': b'                                                                    ^\n'}
+[0.858735] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858770] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:95:100: E501 line too long (250 > 99 characters)\n'}
+[0.858807] (bicycle_control) StdoutLine: {'line': b'                step_cost = self.w_lat * cte ** 2 + self.w_long * at_err ** 2 + self.w_v * speed_err ** 2 + self.w_yaw * heading_err ** 2 + self.w_steer * steer_comm ** 2 + self.w_accel * acc_comm ** 2 + self.w_dsteer * (steer_comm - prev_delta) ** 2\n'}
+[0.858851] (bicycle_control) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.858887] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.858926] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:102:9: E303 too many blank lines (2)\n'}
+[0.858963] (bicycle_control) StdoutLine: {'line': b'        # 3. Warm-Start Initialization:\n'}
+[0.859001] (bicycle_control) StdoutLine: {'line': b'        ^\n'}
+[0.859036] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859074] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:104:9: E306 expected 1 blank line before a nested definition, found 0\n'}
+[0.859112] (bicycle_control) StdoutLine: {'line': b'        def u_init():\n'}
+[0.859147] (bicycle_control) StdoutLine: {'line': b'        ^\n'}
+[0.859185] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859221] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:106:28: E203 whitespace before ','\n"}
+[0.859257] (bicycle_control) StdoutLine: {'line': b'            u = np.append(u , u[2 * N - 4])\n'}
+[0.859295] (bicycle_control) StdoutLine: {'line': b'                           ^\n'}
+[0.859331] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859373] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/mpc.py:107:28: E203 whitespace before ','\n"}
+[0.859407] (bicycle_control) StdoutLine: {'line': b'            u = np.append(u , u[2 * N - 3])\n'}
+[0.859444] (bicycle_control) StdoutLine: {'line': b'                           ^\n'}
+[0.859478] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859515] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:121:17: E128 continuation line under-indented for visual indent\n'}
+[0.859555] (bicycle_control) StdoutLine: {'line': b"                method='SLSQP',\n"}
+[0.859588] (bicycle_control) StdoutLine: {'line': b'                ^\n'}
+[0.859621] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859659] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/mpc.py:122:17: E128 continuation line under-indented for visual indent\n'}
+[0.859695] (bicycle_control) StdoutLine: {'line': b"                options={'maxiter': 25, 'ftol': 1e-3})\n"}
+[0.859728] (bicycle_control) StdoutLine: {'line': b'                ^\n'}
+[0.859760] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859793] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:48:69: E203 whitespace before ','\n"}
+[0.859827] (bicycle_control) StdoutLine: {'line': b"        self.state_sub = self.create_subscription(Odometry, '/state' , self.odom_callback , 10)\n"}
+[0.859860] (bicycle_control) StdoutLine: {'line': b'                                                                    ^\n'}
+[0.859894] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.859926] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:48:90: E203 whitespace before ','\n"}
+[0.859962] (bicycle_control) StdoutLine: {'line': b"        self.state_sub = self.create_subscription(Odometry, '/state' , self.odom_callback , 10)\n"}
+[0.859997] (bicycle_control) StdoutLine: {'line': b'                                                                                         ^\n'}
+[0.860033] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860068] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:57:100: E501 line too long (104 > 99 characters)\n'}
+[0.860105] (bicycle_control) StdoutLine: {'line': b'        # This allows the car to automatically hold a steady speed instead of requiring manual throttle.\n'}
+[0.860141] (bicycle_control) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.860177] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860211] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:67:1: W293 blank line contains whitespace\n'}
+[0.860248] (bicycle_control) StdoutLine: {'line': b'    \n'}
+[0.860283] (bicycle_control) StdoutLine: {'line': b'^\n'}
+[0.860316] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860348] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:74:24: E225 missing whitespace around operator\n'}
+[0.860383] (bicycle_control) StdoutLine: {'line': b'        self.target_vel= msg.linear.x\n'}
+[0.860417] (bicycle_control) StdoutLine: {'line': b'                       ^\n'}
+[0.860452] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860489] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:76:59: E203 whitespace before ','\n"}
+[0.860526] (bicycle_control) StdoutLine: {'line': b'        self.current_throttle = float(np.clip(raw_throttle , -1.0 , 1.0))\n'}
+[0.860566] (bicycle_control) StdoutLine: {'line': b'                                                          ^\n'}
+[0.860604] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860647] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:76:66: E203 whitespace before ','\n"}
+[0.860687] (bicycle_control) StdoutLine: {'line': b'        self.current_throttle = float(np.clip(raw_throttle , -1.0 , 1.0))\n'}
+[0.860722] (bicycle_control) StdoutLine: {'line': b'                                                                 ^\n'}
+[0.860757] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860789] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:78:58: E203 whitespace before ','\n"}
+[0.860822] (bicycle_control) StdoutLine: {'line': b'        self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))\n'}
+[0.860855] (bicycle_control) StdoutLine: {'line': b'                                                         ^\n'}
+[0.860894] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.860929] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/teleop_bridge.py:78:80: E203 whitespace before ','\n"}
+[0.860965] (bicycle_control) StdoutLine: {'line': b'        self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))\n'}
+[0.861000] (bicycle_control) StdoutLine: {'line': b'                                                                               ^\n'}
+[0.861035] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861070] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:78:100: E501 line too long (102 > 99 characters)\n'}
+[0.861105] (bicycle_control) StdoutLine: {'line': b'        self.current_steer = float(np.clip(self.raw_steer , -self.max_steer_rad , self.max_steer_rad))\n'}
+[0.861143] (bicycle_control) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.861178] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861212] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:94:47: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.861247] (bicycle_control) StdoutLine: {'line': b'        self.throttle_pub.publish(Float32(data = self.current_throttle))\n'}
+[0.861285] (bicycle_control) StdoutLine: {'line': b'                                              ^\n'}
+[0.861324] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861360] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:94:49: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.861398] (bicycle_control) StdoutLine: {'line': b'        self.throttle_pub.publish(Float32(data = self.current_throttle))\n'}
+[0.861436] (bicycle_control) StdoutLine: {'line': b'                                                ^\n'}
+[0.861470] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861504] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:95:44: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.861539] (bicycle_control) StdoutLine: {'line': b'        self.steer_pub.publish(Float32(data = self.current_steer))\n'}
+[0.861573] (bicycle_control) StdoutLine: {'line': b'                                           ^\n'}
+[0.861607] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861650] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/teleop_bridge.py:95:46: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.861687] (bicycle_control) StdoutLine: {'line': b'        self.steer_pub.publish(Float32(data = self.current_steer))\n'}
+[0.861723] (bicycle_control) StdoutLine: {'line': b'                                             ^\n'}
+[0.861755] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861787] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/velocity_profiler.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[0.861820] (bicycle_control) StdoutLine: {'line': b'class VelocityProfiler:\n'}
+[0.861855] (bicycle_control) StdoutLine: {'line': b'^\n'}
+[0.861889] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.861922] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/velocity_profiler.py:28:17: E701 multiple statements on one line (colon)\n'}
+[0.861954] (bicycle_control) StdoutLine: {'line': b'            else: target_speed = fallback_speed\n'}
+[0.861985] (bicycle_control) StdoutLine: {'line': b'                ^\n'}
+[0.862016] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862046] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/velocity_profiler.py:31:49: E203 whitespace before ','\n"}
+[0.862080] (bicycle_control) StdoutLine: {'line': b'            target_speed = float(np.clip(v_curve , 0 , self.max_speed))\n'}
+[0.862112] (bicycle_control) StdoutLine: {'line': b'                                                ^\n'}
+[0.862143] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862176] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/velocity_profiler.py:31:53: E203 whitespace before ','\n"}
+[0.862206] (bicycle_control) StdoutLine: {'line': b'            target_speed = float(np.clip(v_curve , 0 , self.max_speed))\n'}
+[0.862241] (bicycle_control) StdoutLine: {'line': b'                                                    ^\n'}
+[0.862271] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862301] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/velocity_profiler.py:33:1: W293 blank line contains whitespace\n'}
+[0.862332] (bicycle_control) StdoutLine: {'line': b'        \n'}
+[0.862362] (bicycle_control) StdoutLine: {'line': b'^\n'}
+[0.862394] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862425] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/pure_pursuit.py:44:69: E203 whitespace before ','\n"}
+[0.862455] (bicycle_control) StdoutLine: {'line': b'            waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))\n'}
+[0.862488] (bicycle_control) StdoutLine: {'line': b'                                                                    ^\n'}
+[0.862516] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862547] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/pure_pursuit.py:44:100: E501 line too long (112 > 99 characters)\n'}
+[0.862577] (bicycle_control) StdoutLine: {'line': b'            waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))\n'}
+[0.862607] (bicycle_control) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.862642] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862677] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/pure_pursuit.py:44:107: E203 whitespace before ','\n"}
+[0.862723] (bicycle_control) StdoutLine: {'line': b'            waypoint_dist = math.sqrt(math.pow(x - path_points[i][0] , 2) + math.pow(y - path_points[i][1] , 2))\n'}
+[0.862775] (bicycle_control) StdoutLine: {'line': b'                                                                                                          ^\n'}
+[0.862831] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.862886] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/pure_pursuit.py:47:1: W293 blank line contains whitespace\n'}
+[0.862942] (bicycle_control) StdoutLine: {'line': b'            \n'}
+[0.862993] (bicycle_control) StdoutLine: {'line': b'^\n'}
+[0.863046] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.863096] (bicycle_control) StdoutLine: {'line': b'./bicycle_control/pure_pursuit.py:49:5: E303 too many blank lines (2)\n'}
+[0.863148] (bicycle_control) StdoutLine: {'line': b'    def compute_steering(self, x, y, yaw, target_pt, lookahead):\n'}
+[0.863199] (bicycle_control) StdoutLine: {'line': b'    ^\n'}
+[0.863249] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.863300] (bicycle_control) StdoutLine: {'line': b"./bicycle_control/pure_pursuit.py:58:42: E203 whitespace before ','\n"}
+[0.863354] (bicycle_control) StdoutLine: {'line': b'        true_lookahead = math.hypot(x_loc , y_loc)\n'}
+[0.863405] (bicycle_control) StdoutLine: {'line': b'                                         ^\n'}
+[0.863458] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.863512] (bicycle_control) StdoutLine: {'line': b'2     E128 continuation line under-indented for visual indent\n'}
+[0.863562] (bicycle_control) StdoutLine: {'line': b"25    E203 whitespace before ','\n"}
+[0.863618] (bicycle_control) StdoutLine: {'line': b'1     E225 missing whitespace around operator\n'}
+[0.863685] (bicycle_control) StdoutLine: {'line': b'4     E251 unexpected spaces around keyword / parameter equals\n'}
+[0.863743] (bicycle_control) StdoutLine: {'line': b'1     E302 expected 2 blank lines, found 1\n'}
+[0.863801] (bicycle_control) StdoutLine: {'line': b'2     E303 too many blank lines (2)\n'}
+[0.863857] (bicycle_control) StdoutLine: {'line': b'1     E306 expected 1 blank line before a nested definition, found 0\n'}
+[0.863926] (bicycle_control) StdoutLine: {'line': b'5     E501 line too long (106 > 99 characters)\n'}
+[0.863992] (bicycle_control) StdoutLine: {'line': b'2     E701 multiple statements on one line (colon)\n'}
+[0.864065] (bicycle_control) StdoutLine: {'line': b'4     W293 blank line contains whitespace\n'}
+[0.864123] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.864185] (bicycle_control) StdoutLine: {'line': b'17 files checked\n'}
+[0.864244] (bicycle_control) StdoutLine: {'line': b'47 errors\n'}
+[0.864300] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.864359] (bicycle_control) StdoutLine: {'line': b"'E'-type errors: 43\n"}
+[0.864418] (bicycle_control) StdoutLine: {'line': b"'W'-type errors: 4\n"}
+[0.864476] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.864534] (bicycle_control) StdoutLine: {'line': b'Checked files:\n'}
+[0.864593] (bicycle_control) StdoutLine: {'line': b'\n'}
+[0.864657] (bicycle_control) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.864720] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/lateral_pid.py\n'}
+[0.864779] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/controller_node.py\n'}
+[0.864845] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/longitudinal_pid.py\n'}
+[0.864907] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/mpc.py\n'}
+[0.864969] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/teleop_bridge.py\n'}
+[0.865031] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/velocity_profiler.py\n'}
+[0.865093] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/pure_pursuit.py\n'}
+[0.865155] (bicycle_control) StdoutLine: {'line': b'* ./bicycle_control/__init__.py\n'}
+[0.865211] (bicycle_control) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.865271] (bicycle_control) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.865330] (bicycle_control) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.865389] (bicycle_control) StdoutLine: {'line': b'* ./test/test_longitudinal_pid.py\n'}
+[0.865451] (bicycle_control) StdoutLine: {'line': b'* ./test/test_velocity_profiler.py\n'}
+[0.865508] (bicycle_control) StdoutLine: {'line': b'* ./test/test_pure_pursuit.py\n'}
+[0.865561] (bicycle_control) StdoutLine: {'line': b'* ./test/test_mpc.py\n'}
+[0.865615] (bicycle_control) StdoutLine: {'line': b'* ./test/test_lateral_pid.py\n'}
+[0.865674] (bicycle_control) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.865736] (bicycle_control) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[0.865793] (bicycle_control) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________ test_lateral_pid_steer_right _________________________\x1b[0m\n'}
+[0.865859] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_lateral_pid.py\x1b[0m:8: in test_lateral_pid_steer_right\n'}
+[0.865921] (bicycle_control) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m delta < \x1b[94m0.0\x1b[39;49;00m\n'}
+[0.865982] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 0.5 < 0.0\x1b[0m\n'}
+[0.866037] (bicycle_control) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________ test_lateral_pid_steer_left __________________________\x1b[0m\n'}
+[0.866095] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_lateral_pid.py\x1b[0m:15: in test_lateral_pid_steer_left\n'}
+[0.866157] (bicycle_control) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m delta > \x1b[94m0.0\x1b[39;49;00m\n'}
+[0.866220] (bicycle_control) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert -0.5 > 0.0\x1b[0m\n'}
+[0.866277] (bicycle_control) StdoutLine: {'line': b'- generated xml file: /home/mizo/Engineering/ARL/Control_Task/Control_Project/build/bicycle_control/pytest.xml -\n'}
+[0.866337] (bicycle_control) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[0.866421] (bicycle_control) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.866483] (bicycle_control) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.866543] (bicycle_control) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[0.866603] (bicycle_control) StderrLine: {'line': b'\n'}
+[0.866668] (bicycle_control) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[0.866725] (bicycle_control) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[0.866784] (bicycle_control) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 47 code style...\n'}
+[0.866840] (bicycle_control) StdoutLine: {'line': b'FAILED test/test_lateral_pid.py::test_lateral_pid_steer_right - assert 0.5 < 0.0\n'}
+[0.866896] (bicycle_control) StdoutLine: {'line': b'FAILED test/test_lateral_pid.py::test_lateral_pid_steer_left - assert -0.5 > 0.0\n'}
+[0.866953] (bicycle_control) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m3 failed\x1b[0m, \x1b[32m9 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.42s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[0.901387] (-) TimerEvent: {}
+[0.940515] (bicycle_control) CommandEnded: {'returncode': 1}
+[0.940899] (bicycle_control) TestFailure: {'identifier': 'bicycle_control'}
+[0.940919] (bicycle_control) JobEnded: {'identifier': 'bicycle_control', 'rc': 0}
+[0.941407] (-) EventReactorShutdown: {}

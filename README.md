@@ -1,10 +1,9 @@
-# Bicycle Gym: Controller Results and Milestone 6 (Free Exploration)
+# Bicycle Gym: Controller Results and Milestone 6
 
 |                |                                                                       |
 | -------------- | --------------------------------------------------------------------- |
 | **Student**    | Mohamed Ahmed Fouad                                                   |
 | **Student ID** | `24P0049`                                                             |
-| **Simulation** | ROS 2 Humble, `bicycle_sim` / `bicycle_control` / `track_environment` |
 
 ## Table of Contents
 
@@ -119,24 +118,11 @@ The run-level quantities were calculated as follows:
 
 ## 2. Milestone 6 Overview
 
-Milestone 6 connects the 2D planar kinematic bicycle model used in this project to tools and approaches used in real autonomous-vehicle development.
-
-The simulated vehicle uses the following parameters, which are shared by the simulator, controllers, and URDF/Xacro models:
-
-| Parameter       |  Value |
-| --------------- | -----: |
-| Wheelbase `L`   | 1.25 m |
-| Track width `W` | 1.18 m |
-| Wheel radius    |  0.5 m |
-| Wheel width     |  0.3 m |
-
-Three topics were explored:
-
-| # | Topic                                              | Question it answers                                                                   |
-| - | -------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| 1 | Four-wheel Ackermann kinematics and `ros2_control` | What does the bicycle model hide about real steering geometry?                        |
-| 2 | 2D kinematic vs 3D simulation                      | What does a kinematic simulator leave out?                                            |
-| 3 | Deterministic MPC vs sampling-based MPPI           | How does a sampling-based controller differ from the MPC implemented in this project? |
+| # | Topic                                              |
+| - | -------------------------------------------------- |
+| 1 | Four-wheel Ackermann kinematics and `ros2_control` |
+| 2 | 2D kinematic vs 3D simulation                      |
+| 3 | Deterministic MPC vs sampling-based MPPI           |
 
 ---
 
